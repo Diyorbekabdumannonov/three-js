@@ -24,7 +24,9 @@ function App() {
   const manager = new LoadingManager();
   manager.onLoad = function () {
     console.log('Loading complete!');
-    setLoading(false)
+    setTimeout(() => {
+      setLoading(false)
+    }, 5000)
   };
   const loader = new ObjectLoader(manager);
   loader.load('file.obj', function (object) {
@@ -35,7 +37,9 @@ function App() {
 
   return (
     <Suspense fallback={null}>
-      {loading ? 'loading' : ''}
+      <div>
+        {loading ? 'loading' : ''}
+      </div>
       <Canvas>
         <OrbitControls
           target={[0, 0.35, 0]}
