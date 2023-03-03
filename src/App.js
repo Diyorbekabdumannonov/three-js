@@ -4,7 +4,6 @@ import {
   EffectComposer,
   Bloom,
   ChromaticAberration,
-  Scanline,
 } from "@react-three/postprocessing";
 import { BlendFunction } from "postprocessing";
 import {
@@ -16,11 +15,27 @@ import {
 import "./style.css";
 import { Car } from "./Car";
 import { Ground } from './Ground'
+import { LoadingManager, ObjectLoader } from "three";
 
 function App() {
   const [color, setColor] = useState([1, 1, 2])
+  const [loading, setLoading] = useState(true)
+
+  const manager = new LoadingManager();
+  manager.onLoad = function () {
+    console.log('Loading complete!');
+    setLoading(false)
+  };
+  const loader = new ObjectLoader(manager);
+  loader.load('file.obj', function (object) {
+
+    //
+
+  });
+
   return (
     <Suspense fallback={null}>
+      {loading ? 'loading' : ''}
       <Canvas>
         <OrbitControls
           target={[0, 0.35, 0]}
@@ -71,7 +86,6 @@ function App() {
           />
         </EffectComposer>
       </Canvas>
-
     </Suspense>
   );
 }
