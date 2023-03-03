@@ -24,9 +24,7 @@ function App() {
   const manager = new LoadingManager();
   manager.onLoad = function () {
     console.log('Loading complete!');
-    setTimeout(() => {
-      setLoading(false)
-    }, 5000)
+    setLoading(false)
   };
   const loader = new ObjectLoader(manager);
   loader.load('file.obj', function (object) {
