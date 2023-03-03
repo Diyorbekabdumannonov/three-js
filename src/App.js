@@ -16,9 +16,9 @@ import "./style.css";
 import { Car } from "./Car";
 import { Ground } from './Ground'
 import { LoadingManager, ObjectLoader } from "three";
+import { Room } from './Room'
 
 function App() {
-  const [color, setColor] = useState([1, 1, 2])
   const [loading, setLoading] = useState(true)
 
   const manager = new LoadingManager();
@@ -44,6 +44,7 @@ function App() {
           maxPolarAngle={1.45}
         />
         <PerspectiveCamera makeDefault fov={50} position={[3, 2, 5]} />
+        <Room />
         <CubeCamera resolution={256}>
           {(texture) => (
             <>
@@ -54,20 +55,20 @@ function App() {
         </CubeCamera>
         <Ground />
         <spotLight
-          color={color}
-          intensity={1.5}
-          angle={0.6}
+          color={[3, 3, 3]}
+          intensity={0.5}
+          angle={0.9}
           penumbra={0.5}
-          position={[5, 5, 0]}
+          position={[4, 4, 0]}
           castShadow
           shadow-bias={-0.0001}
         />
         <spotLight
-          color={color}
-          intensity={2}
+          color={[0, 1, 0]}
+          intensity={1}
           angle={0.6}
           penumbra={0.5}
-          position={[-5, 5, 0]}
+          position={[-4, 4, 0]}
           castShadow
           shadow-bias={-0.0001}
         />

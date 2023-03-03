@@ -1,0 +1,11 @@
+Model Information:
+* title:	Empty old Garage room
+* source:	https://sketchfab.com/3d-models/empty-old-garage-room-778f5663b0c244508342bdc0f7a1db38
+* author:	NEYCER (https://sketchfab.com/NEYCER)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Empty old Garage room" (https://sketchfab.com/3d-models/empty-old-garage-room-778f5663b0c244508342bdc0f7a1db38) by NEYCER (https://sketchfab.com/NEYCER) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

@@ -11,7 +11,7 @@ export function Car() {
   const scene = new Scene()
   
   useEffect(() => {
-    gltf.scene.scale.set(1, 1, 1);
+    gltf.scene.scale.set(1,1 , 1);
     gltf.scene.position.set(0, -0.035, 0);
     const newMaterial = new MeshStandardMaterial({ color: 0xff0000 });
     gltf.scene.traverse((object) => {
