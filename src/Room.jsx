@@ -1,17 +1,16 @@
 import React, { useEffect } from "react";
 import { useLoader } from "@react-three/fiber";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
-import { EquirectangularReflectionMapping, LoadingManager, Mesh, MeshStandardMaterial, RepeatWrapping, Scene, TextureLoader } from "three";
+import { Mesh } from "three";
 
-export function Room() {
+export default function Room() {
     const gltf = useLoader(
         GLTFLoader,
         process.env.PUBLIC_URL + "models/room/scene.gltf"
     );
-    const scene = new Scene()
 
     useEffect(() => {
-        gltf.scene.scale.set(1.5, 2,1);
+        gltf.scene.scale.set(1.5, 2, 1);
         gltf.scene.position.set(0, -0.335, 0);
         gltf.scene.traverse((object) => {
             if (object instanceof Mesh) {
