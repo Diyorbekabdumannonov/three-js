@@ -12,7 +12,7 @@ export function Room() {
 
     useEffect(() => {
         gltf.scene.scale.set(1.5, 2,1);
-        gltf.scene.position.set(0, -1, 0);
+        gltf.scene.position.set(0, -0.335, 0);
         gltf.scene.traverse((object) => {
             if (object instanceof Mesh) {
                 object.castShadow = true;
