@@ -21,5 +21,5 @@ export default function Room() {
         });
     }, [gltf]);
 
-    return <primitive object={gltf.scene} />;
+    return <primitive object={gltf.scene}  />;
 }

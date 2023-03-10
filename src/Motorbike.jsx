@@ -11,13 +11,11 @@ export default function Motorbike({ color }) {
 
   useEffect(() => {
     gltf.scene.scale.set(2.3, 2.3, 2.3);
-    gltf.scene.position.set(0, -0.335, 0);
+    gltf.scene.position.set(0, -0.335, -2);
     const newMaterial = new MeshStandardMaterial({ color: color });
     gltf.scene.traverse((object) => {
-      if (object.name === 'Object_5') {
-        object.material = newMaterial;
-      }
-      if (object.name === 'Object_25') {
+      console.log(object.name)
+      if (object.name === 'transform177') {
         object.material = newMaterial;
       }
       if (object instanceof Mesh) {
