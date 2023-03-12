@@ -14,8 +14,7 @@ export default function Motorbike({ color }) {
     gltf.scene.position.set(0, -0.335, -2);
     const newMaterial = new MeshStandardMaterial({ color: color });
     gltf.scene.traverse((object) => {
-      console.log(object.name)
-      if (object.name === 'transform177') {
+      if (object.name === 'polySurface694_Colour_Map_0') {
         object.material = newMaterial;
       }
       if (object instanceof Mesh) {
