@@ -1,11 +1,11 @@
 Model Information:
-* title:	Classic Motorbike
-* source:	https://sketchfab.com/3d-models/classic-motorbike-24158b63a5ed4e9f90b2b8f6b37dc399
-* author:	DeclanLea14 (https://sketchfab.com/DeclanLea14)
+* title:	2009 Kawasaki Ninja 250R (Low Poly)
+* source:	https://sketchfab.com/3d-models/2009-kawasaki-ninja-250r-low-poly-7f11c6d5e3c74046942492c9f03c64d0
+* author:	Bandit.545 (https://sketchfab.com/Bandit.545)
 
 Model License:
 * license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
 * requirements:	Author must be credited. Commercial use is allowed.
 
 If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
-This work is based on "Classic Motorbike" (https://sketchfab.com/3d-models/classic-motorbike-24158b63a5ed4e9f90b2b8f6b37dc399) by DeclanLea14 (https://sketchfab.com/DeclanLea14) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+This work is based on "2009 Kawasaki Ninja 250R (Low Poly)" (https://sketchfab.com/3d-models/2009-kawasaki-ninja-250r-low-poly-7f11c6d5e3c74046942492c9f03c64d0) by Bandit.545 (https://sketchfab.com/Bandit.545) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
